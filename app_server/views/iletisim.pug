@@ -1,0 +1,23 @@
+extends layout 
+block content 
+  .row.page-header 
+    .col-lg-12 
+      h1 İletişim
+  .row 
+    .col-xs-12.col-md-12 
+      .row 
+        .col-xs-12.col-sm-6 
+          .panel.panel-primary 
+            .panel-heading 
+              h2.panel-title Açılış Saatleri 
+            .panel-body 
+              p 
+                | Pazartesi-Cuma 09:00-17:00
+        .col-xs-12.col-sm-6 
+          .panel.panel-primary 
+            .panel-heading
+              h2.panel-title Konum Bilgisi 
+            .panel-body 
+              -var enlem=36.893833
+              -var boylam=30.669673
+              img.img-responsive.img-rounded(src='http://maps.googleapis.com/maps/api/staticmap?center='+enlem+','+boylam+'&zoom=12&size=600x400&markers='+enlem+','+boylam+'&key=AIzaSyCmmKygTpBzHGOZEciJpAdxC9v_tWHagnE')  
